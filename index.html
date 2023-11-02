@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script type="module" src="js/controller.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>black jack game</title>
+  </head>
+  <body>
+    <main>
+      <h1>🍀Black Jack🍀</h1>
+
+      <div class="player-selection-div player-selection">
+        <h2 class="player-selection-label">How many players?</h2>
+        <div class="start-btn-div">
+          <input
+            type="number"
+            step="1"
+            min="1"
+            max="6"
+            maxlength="1"
+            value="1"
+            class="player-selection-input"
+          />
+        </div>
+      </div>
+
+      <button class="play-btn player-selection">Start</button>
+
+      <div class="next-round-btn hidden">
+        <button class="next-round-btn">Next round 🃏</button>
+      </div>
+      <div class="game-main-div hidden">
+        <div class="card-dealer">
+          <h2 class="player-name-label">Dealer</h2>
+          <img
+            src="assets/img/Playing Cards/SVG-cards-1.3/black_joker.svg"
+            alt="Playing card"
+            class="card-img dealer-cards-img"
+          />
+          <img
+            src="assets/img/Playing Cards/SVG-cards-1.3/black_joker.svg"
+            alt="Playing card"
+            class="card-img dealer-cards-img card-img-2"
+          />
+        </div>
+
+        <div class="players-main-div">
+          <section class="player-section player--0 active-player">
+            <h2 class="player-name-label">player 1</h2>
+            <div class="bank-text">Bank</div>
+            <div class="bank">1000</div>
+            <div class="bet-text">Bet</div>
+            <div class="bet-value">100</div>
+            <div class="card-player">
+              <img
+                src="assets/img/Playing Cards/SVG-cards-1.3/black_joker.svg"
+                alt="Playing card"
+                class="card-img player-cards-img"
+              />
+              <img
+                src="assets/img/Playing Cards/SVG-cards-1.3/black_joker.svg"
+                alt="Playing card"
+                class="card-img player-cards-img card-img-2"
+              />
+            </div>
+
+            <div class="message">&nbsp;</div>
+          </section>
+        </div>
+      </div>
+      <div class="name-input-main-div hidden">
+        <div class="name-input-div player--0">
+          <label for="name" class="name-input-label">Player 1</label>
+          <input
+            type="text"
+            class="name-input-player"
+            name="myInput"
+            placeholder="John"
+            autocomplete="off"
+            maxlength="6"
+            value="Abi"
+          />
+        </div>
+
+        <div class="done-btn-div">
+          <button class="name-done-btn">Let's go!</button>
+        </div>
+      </div>
+
+      <div class="bet-main-div hidden">
+        <div class="bet-div bet-input-div player--0">
+          <div>
+            <div class="bank-text">Bank</div>
+            <div class="bank">1000</div>
+          </div>
+          <label for="bet" class="bet-input-label">Enter your bet</label>
+          <input
+            type="number"
+            class="bet-input bet-input-player0"
+            name="myInput"
+            value="10"
+            autocomplete="off"
+            min="0"
+            disabled="true"
+          />
+        </div>
+        <div class="bet-btn-div">
+          <button class="bet-btn">Bet</button>
+        </div>
+      </div>
+      <div class="playing-btn-div hidden">
+        <button class="playing-btn-stay">Stay</button>
+        <button class="playing-btn-double">Double</button>
+        <button class="playing-btn-hit">Hit me</button>
+      </div>
+    </main>
+  </body>
+</html>
