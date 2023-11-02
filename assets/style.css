@@ -1,0 +1,254 @@
+/* @font-face {
+        font-family: "Lobster";
+        src: url(./Fonts/Lobster-Regular.ttf) format("truetype");
+      } */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background: #023b07;
+}
+
+main {
+  font-family: Lobster, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(6, auto);
+  grid-gap: 2rem;
+  overflow: hidden;
+  place-items: center;
+}
+h1 {
+  font-family: inherit;
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-top: 2rem;
+  color: #141414;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: center;
+}
+
+.game-main-div {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  text-align: center;
+}
+
+.card-dealer {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-content: center;
+  margin: 1rem;
+}
+
+.player-section {
+  display: inline-block;
+  margin: 1rem;
+  width: 33vw;
+}
+
+.players {
+  margin-top: 2rem;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.player-name-label {
+  color: rgb(234, 228, 223);
+  margin-bottom: 1rem;
+}
+
+.card-player {
+  display: block;
+  margin-top: 1rem;
+}
+
+.card-img {
+  height: 12rem;
+}
+.card-img-2 {
+  margin-left: -6rem;
+}
+
+.bet-main-div {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin-top: 2rem;
+  font-family: inherit;
+  justify-self: center;
+}
+
+.bet-text,
+.bank-text,
+.bank,
+.bet-value {
+  font-family: inherit;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+.bank-text,
+.bank {
+  margin-bottom: 1rem;
+}
+.bet-text,
+.bank-text {
+  background-color: white;
+  padding: 5px 5rem 5px 1rem;
+  z-index: 1;
+  width: 7rem;
+  border-radius: 0.5rem 2rem 2rem 0.5rem;
+  margin-left: 1rem;
+}
+
+.bet-value,
+.bank {
+  background-color: rgb(234, 228, 223);
+  padding: 5px 1rem;
+  margin-left: -3.5rem;
+  width: 5rem;
+  border-radius: 2rem;
+}
+
+.bet-main-div,
+.name-input-main-div {
+  font-family: inherit;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.name-input-div {
+  display: inline-block;
+  margin: 5.5rem;
+  width: 15rem;
+}
+.bet-input-div {
+  display: inline-block;
+  margin: 4rem;
+  width: 15rem;
+}
+.bet-input,
+.name-input-player {
+  width: 5rem;
+}
+.bet-input-label,
+.name-input-label {
+  color: rgb(249, 255, 241);
+}
+
+.players-name {
+  font-family: inherit;
+  color: rgb(249, 255, 241);
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: inline-block;
+}
+.bet-div,
+.play-btn,
+.done-btn-div,
+.bet-btn-div {
+  text-align: center;
+}
+
+.bet-btn,
+.play-btn,
+.name-done-btn {
+  font-family: inherit;
+  font-size: 2rem;
+  color: #333;
+  border-radius: 2rem;
+  height: 4rem;
+  width: 8rem;
+  background-color: #f1c100d9;
+  cursor: pointer;
+  box-shadow: 0 0 10px 10px rgba(51, 51, 51, 0.6);
+}
+.play-btn {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+.playing-btn-div {
+  font-size: 1rem;
+  grid-column: 2/3;
+  grid-row: 5/6;
+  justify-self: center;
+}
+.playing-btn-stay,
+.playing-btn-double,
+.playing-btn-hit {
+  font-family: inherit;
+  border-radius: 2rem;
+  width: 5rem;
+  height: 3rem;
+  cursor: pointer;
+  background-color: rgb(234, 228, 223);
+}
+.start-btn-div {
+  text-align: center;
+}
+.player-selection-div {
+  color: rgb(234, 228, 223);
+  border-radius: 2rem;
+  grid-column: 2/3;
+  grid-row: 4/5;
+
+  margin: 3.5rem;
+}
+
+.player-selection-input {
+  font-family: inherit;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  background-color: rgb(234, 228, 223);
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.message {
+  color: rgb(234, 228, 223);
+  font-size: 1.8rem;
+}
+
+.next-round-btn {
+  font-family: inherit;
+  color: #333;
+  font-size: 1.5rem;
+  grid-column: 2/3;
+  grid-row: 6/7;
+  padding: 5px 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  right: 2rem;
+}
+
+.active-player {
+  background-color: #706e6e67;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 15px 10px rgba(51, 51, 51, 0.283);
+}
+
+.inactive-player {
+  background-color: #706e6e67;
+  padding: 1rem;
+  border-radius: 1rem;
+  filter: opacity(50%);
+}
+.hidden {
+  display: none;
+}
