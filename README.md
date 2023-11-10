@@ -1,3 +1,3 @@
-﻿# Blackjack-Project1
+﻿# Blackjack
 
  game application
