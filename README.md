@@ -1,3 +1,6 @@
 ﻿# Blackjack
+ ` game application`
+## Visit the link below
 
- game application
+https://rawcdn.githack.com/Negar-Maleki/Blackjack/main/index.html
+
