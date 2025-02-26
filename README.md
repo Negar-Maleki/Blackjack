@@ -7,6 +7,11 @@ Play the game instantly in your browser:
 
 [🔗 Play Blackjack Now](https://rawcdn.githack.com/Negar-Maleki/Blackjack/main/index.html)
 
+
+<a href="https://rawcdn.githack.com/Negar-Maleki/Blackjack/main/index.html">
+  <img src="https://github.com/user-attachments/assets/a3ef6fce-a96d-4d93-8f50-1d5ce144348a" width="300">
+</a>
+
 ---
 
 ## 🎮 How to Play
@@ -28,6 +33,23 @@ Play the game instantly in your browser:
 - **HTML5** – Page structure
 - **CSS3** – Styling & layout
 - **JavaScript (ES6)** – Game logic & interactivity
+
+---
+
+## 🧑‍💻 Why Vanilla JavaScript?
+- No frameworks = **lighter, faster, and fully customizable**
+- Demonstrates **strong core JS skills** (DOM manipulation, event handling, game logic)
+- Encourages learning **fundamental programming concepts** without relying on a framework
+
+---
+
+## 📌 Features
+- ✅ Built with pure JavaScript (no libraries, no frameworks)
+- ✅ Fully interactive gameplay
+- ✅ Card deck shuffling & dealing logic
+- ✅ Basic AI for the dealer
+- ✅ Dynamic DOM manipulation for game updates
+- ✅ Responsive design for mobile & desktop
 
 ---
 
